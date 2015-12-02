@@ -1,11 +1,11 @@
-# babel-preset-es2015
+# babel-preset-es2015-webpack2
 
-> Babel preset for all es2015 plugins.
+> Babel preset for all es2015 plugins except es2015-modules-commonjs (because webpack2 supports it already!).
 
 ## Install
 
 ```sh
-$ npm install --save-dev babel-preset-es2015
+$ npm install --save-dev babel-preset-es2015-webpack2
 ```
 
 ## Usage
@@ -16,14 +16,14 @@ $ npm install --save-dev babel-preset-es2015
 
 ```json
 {
-  "presets": ["es2015"]
+  "presets": ["es2015-webpack2"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel script.js --presets es2015
+$ babel script.js --presets es2015-webpack2
 ```
 
 ### Via Node API
